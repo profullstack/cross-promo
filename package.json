@@ -1,0 +1,26 @@
+{
+  "name": "@profullstack/cross-promo",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "The \"more from the network\" block for transactional email: one live, audience-tagged catalog of Profullstack properties rendered as text, Markdown or HTML.",
+  "keywords": ["email", "cross-promotion", "transactional-email", "network", "profullstack"],
+  "repository": { "type": "git", "url": "git+https://github.com/profullstack/cross-promo.git" },
+  "homepage": "https://github.com/profullstack/cross-promo#readme",
+  "bugs": { "url": "https://github.com/profullstack/cross-promo/issues" },
+  "license": "MIT",
+  "author": "Profullstack, Inc.",
+  "exports": {
+    ".": { "types": "./index.d.ts", "import": "./src/index.js" },
+    "./catalog.json": "./catalog.json",
+    "./package.json": "./package.json"
+  },
+  "bin": { "cross-promo": "bin/cross-promo.js" },
+  "files": ["src", "bin", "index.d.ts", "catalog.json", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node scripts/build-json.js",
+    "test": "node --test",
+    "prepack": "node scripts/build-json.js"
+  }
+}

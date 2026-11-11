@@ -1,0 +1,174 @@
+// The one list of Profullstack properties that cross-promote each other in
+// transactional email. Edit here, cut a release, and every site that renders a
+// promo block picks it up from jsDelivr @latest within the cache TTL: no site
+// redeploys.
+//
+// `properties`: id (the bare host) -> what to show. `href` is where the link
+// goes (a submit page beats a homepage when the reader has something to list).
+// `aliases`: other hosts the same property answers on (old domain, Moshpit
+// name), so it still recognises itself as the sender after a move.
+// `audiences`: who the reader is -> property ids, most relevant first. A site
+// never sees itself: pass `site` and it is dropped from the list.
+//
+// Pitches are short, true and free of hype. No em dashes.
+
+export default {
+  properties: {
+    'built.indie.pit.world': {
+      name: 'built.indie',
+      href: 'https://built.indie.pit.world/submit',
+      aliases: ['built.indie'],
+      pitch: 'launch your indie product with one URL. Free.',
+    },
+    'pwamart.com': {
+      name: 'pwamart',
+      href: 'https://pwamart.com/console/submit',
+      pitch: 'the app store for web apps. Free to list.',
+    },
+    'saasrow.com': {
+      name: 'SaaSRow',
+      href: 'https://saasrow.pwa.pit.world/submit',
+      aliases: ['saasrow.pwa.pit.world'],
+      pitch: 'the software directory. Free to list.',
+    },
+    'demo.movie': {
+      name: 'demo.movie',
+      href: 'https://demo.movie',
+      pitch: 'give it your URL and get a narrated demo video of your product.',
+    },
+    'mynaposter.com': {
+      name: 'myna',
+      href: 'https://mynaposter.com',
+      pitch: 'post to every social network at once, from the web or your terminal.',
+    },
+    'crawlproof.com': {
+      name: 'CrawlProof',
+      href: 'https://crawlproof.com',
+      pitch: 'see your site the way AI crawlers do, plus free stats.',
+    },
+    'seo.rank.pit.world': {
+      name: 'seo.rank',
+      href: 'https://seo.rank.pit.world',
+      pitch: 'a free on-page SEO audit of any URL.',
+    },
+    'coinpayportal.com': {
+      name: 'CoinPay',
+      href: 'https://coinpayportal.com',
+      pitch: 'take crypto payments on your site, non-custodial.',
+    },
+    'pay.agent.pit.world': {
+      name: 'pay.agent',
+      href: 'https://pay.agent.pit.world',
+      pitch: 'get paid in crypto with one link.',
+    },
+    'ad.network.pit.world': {
+      name: 'ad.network',
+      href: 'https://ad.network.pit.world',
+      pitch: 'run ads or earn from your site, paid in crypto.',
+    },
+    'rssamplifier.com': {
+      name: 'RSS Amplifier',
+      href: 'https://rssamp.com',
+      aliases: ['rssamp.com'],
+      pitch: 'an open directory of blogs. Add your feed free.',
+    },
+    'p0dcasters.com': {
+      name: 'p0dcasters',
+      href: 'https://p0dcasters.com',
+      pitch: 'the open podcast directory. Add your show free.',
+    },
+    'bl0ggers.com': {
+      name: 'bl0ggers',
+      href: 'https://bl0ggers.com',
+      pitch: 'human-in-the-loop AI publishing for your blog.',
+    },
+    'bufferoverride.com': {
+      name: 'BufferOverride',
+      href: 'https://bufferoverride.com',
+      pitch: 'where humans and agents debug together.',
+    },
+    'logicsrc.com': {
+      name: 'LogicSRC',
+      href: 'https://logicsrc.com',
+      pitch: 'open standards and an E2E secrets vault for humans and agents.',
+    },
+    'c0mpute.com': {
+      name: 'c0mpute',
+      href: 'https://c0mpute.com',
+      pitch: 'the open compute network for open-weight AI.',
+    },
+    'hqterm.sh': {
+      name: 'hqterm',
+      href: 'https://hqterm.sh',
+      pitch: 'persistent, shareable terminal sessions over plain ssh.',
+    },
+    'threatcrush.com': {
+      name: 'ThreatCrush',
+      href: 'https://threatcrush.com',
+      pitch: 'a security agent for your Linux servers.',
+    },
+    'readm3.com': {
+      name: 'readm3',
+      href: 'https://readm3.com',
+      pitch: 'write and share Markdown with people and agents.',
+    },
+    'ugig.net': {
+      name: 'ugig.net',
+      href: 'https://ugig.net',
+      pitch: 'the marketplace for AI-assisted professionals.',
+    },
+    'wx93.me': {
+      name: 'wx93',
+      href: 'https://wx93.me',
+      pitch: 'shorten a link, share it, see who clicked.',
+    },
+  },
+
+  audiences: {
+    // Someone just listed or launched a product or app.
+    makers: [
+      'built.indie.pit.world',
+      'pwamart.com',
+      'saasrow.com',
+      'demo.movie',
+      'mynaposter.com',
+      'crawlproof.com',
+      'coinpayportal.com',
+    ],
+    // Someone runs a blog, newsletter or site with an audience.
+    publishers: [
+      'rssamplifier.com',
+      'mynaposter.com',
+      'crawlproof.com',
+      'seo.rank.pit.world',
+      'ad.network.pit.world',
+      'bl0ggers.com',
+      'built.indie.pit.world',
+    ],
+    podcasters: ['p0dcasters.com', 'rssamplifier.com', 'mynaposter.com', 'demo.movie'],
+    developers: [
+      'bufferoverride.com',
+      'logicsrc.com',
+      'built.indie.pit.world',
+      'hqterm.sh',
+      'c0mpute.com',
+      'threatcrush.com',
+      'readm3.com',
+    ],
+    freelancers: ['ugig.net', 'pay.agent.pit.world', 'built.indie.pit.world'],
+    merchants: ['coinpayportal.com', 'pay.agent.pit.world', 'ad.network.pit.world', 'pwamart.com', 'wx93.me'],
+    shoppers: [ 'pwamart.com', 'saasrow.com'],
+  },
+
+  // Heading per audience, shown above the list.
+  titles: {
+    makers: 'List it free in more places',
+    publishers: 'Grow your readership',
+    podcasters: 'Grow your show',
+    developers: 'More tools from Profullstack',
+    freelancers: 'Find more work',
+    merchants: 'Get paid and get seen',
+    shoppers: 'You might also like',
+    default: 'More from the Profullstack network',
+  },
+};
