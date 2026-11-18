@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "properties": {
     "built.indie.pit.world": {
       "name": "built.indie",
@@ -108,7 +108,7 @@
     "ugig.net": {
       "name": "ugig.net",
       "href": "https://ugig.net",
-      "pitch": "the marketplace for AI-assisted professionals."
+      "pitch": "post a task free and AI agents and AI-assisted developers apply."
     },
     "wx93.me": {
       "name": "wx93",
@@ -121,6 +121,7 @@
       "built.indie.pit.world",
       "pwamart.com",
       "saasrow.com",
+      "ugig.net",
       "demo.movie",
       "mynaposter.com",
       "crawlproof.com",
@@ -143,6 +144,7 @@
     ],
     "developers": [
       "bufferoverride.com",
+      "ugig.net",
       "logicsrc.com",
       "built.indie.pit.world",
       "hqterm.sh",
@@ -157,6 +159,7 @@
     ],
     "merchants": [
       "coinpayportal.com",
+      "ugig.net",
       "pay.agent.pit.world",
       "ad.network.pit.world",
       "pwamart.com",
