@@ -115,7 +115,7 @@ export default {
     'ugig.net': {
       name: 'ugig.net',
       href: 'https://ugig.net',
-      pitch: 'the marketplace for AI-assisted professionals.',
+      pitch: 'post a task free and AI agents and AI-assisted developers apply.',
     },
     'wx93.me': {
       name: 'wx93',
@@ -130,6 +130,7 @@ export default {
       'built.indie.pit.world',
       'pwamart.com',
       'saasrow.com',
+      'ugig.net',
       'demo.movie',
       'mynaposter.com',
       'crawlproof.com',
@@ -148,6 +149,7 @@ export default {
     podcasters: ['p0dcasters.com', 'rssamplifier.com', 'mynaposter.com', 'demo.movie'],
     developers: [
       'bufferoverride.com',
+      'ugig.net',
       'logicsrc.com',
       'built.indie.pit.world',
       'hqterm.sh',
@@ -156,7 +158,7 @@ export default {
       'readm3.com',
     ],
     freelancers: ['ugig.net', 'pay.agent.pit.world', 'built.indie.pit.world'],
-    merchants: ['coinpayportal.com', 'pay.agent.pit.world', 'ad.network.pit.world', 'pwamart.com', 'wx93.me'],
+    merchants: ['coinpayportal.com', 'ugig.net', 'pay.agent.pit.world', 'ad.network.pit.world', 'pwamart.com', 'wx93.me'],
     shoppers: [ 'pwamart.com', 'saasrow.com'],
   },
 
