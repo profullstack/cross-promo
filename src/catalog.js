@@ -18,18 +18,18 @@ export default {
       name: 'built.indie',
       href: 'https://built.indie.pit.world/submit',
       aliases: ['built.indie'],
-      pitch: 'launch your indie product with one URL. Free.',
+      pitch: 'launch your indie product with one URL, or let your AI agent submit it over MCP. Free.',
     },
     'pwamart.com': {
       name: 'pwamart',
       href: 'https://pwamart.com/console/submit',
-      pitch: 'the app store for web apps. Free to list.',
+      pitch: 'the app store for web apps. Free to list, by hand or by your AI agent over MCP.',
     },
     'saasrow.com': {
       name: 'SaaSRow',
       href: 'https://saasrow.pwa.pit.world/submit',
       aliases: ['saasrow.pwa.pit.world'],
-      pitch: 'the software directory. Free to list.',
+      pitch: 'the software directory. Free to list, by hand or by your AI agent over MCP.',
     },
     'demo.movie': {
       name: 'demo.movie',
